@@ -21,3 +21,16 @@
 
 en:
   hello: "Hello world"
+  users: "Users"
+  firstname: "First Name"
+  lastname: "Last Name"
+  bio: "Biography"
+  comments: "Comments"
+  price: "Price"
+  show: "Show"
+  edit: "Edit"
+  destroy: "Destroy"
+  back: "Back"
+  newuser: "New User"
+  register: "Register"
+  submit: "Submit"

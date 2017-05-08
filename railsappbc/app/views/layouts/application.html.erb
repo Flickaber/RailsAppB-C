@@ -19,8 +19,10 @@
 <body>
   <header>
     <p class="navbar-text pull-left">
-      <%= link_to "Users", '/users' %> |
-      <%= link_to "Register", '/users/new' %>
+      <%= link_to I18n.translate('.users'), '/users' %> |
+      <%= link_to I18n.translate('.register'), '/users/new' %></p>
+      <p class="navbar-text pull-right">
+        <%= render 'shared/change_locale' %></p>
     </header>
     <div class="clear"></div>
     <% if flash[:success] %>
