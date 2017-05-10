@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  translates :biography, :description, :comments, touch: true
   validates :firstname, :lastname, :email, presence: true
   validates :firstname, length: { minimum: 2, maximum: 20 , message: "must be between 2 and 20 caracters"}
   validates :lastname, length: { minimum: 2, maximum: 25 , message: "must be between 2 and 25 caracters"}

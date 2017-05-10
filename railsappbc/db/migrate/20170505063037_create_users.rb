@@ -12,4 +12,15 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.timestamps
     end
   end
+  reversible do |dir|
+    dir.up do
+      User.create_translation_table! :biography => {:type => :text, :null => true, :default => nil},
+      :description => {:type => :text, :null => true, :default => nil},
+      :comments => {:type => :text, :null => true, :default => nil}
+    end
+
+    dir.down do
+      User.drop_translation_table!
+    end
+  end
 end
