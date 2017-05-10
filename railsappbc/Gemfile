@@ -39,8 +39,7 @@ gem 'rails-i18n'
 # gem 'globalize', '~> 5.0.1'
 gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem 'activemodel-serializers-xml'
-# gem 'rails_admin_globalize_field'
-# gem 'rails_admin'
+gem 'money-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

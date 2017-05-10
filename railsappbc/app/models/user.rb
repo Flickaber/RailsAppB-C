@@ -8,5 +8,6 @@ class User < ApplicationRecord
   validates :biography, allow_blank: true, length: { minimum: 10, message: "must be bigger than 10"}
   validates :description, allow_blank: true, length: { minimum: 10, message: "must be bigger than 10"}
   validates :comments, allow_blank: true, length: { minimum: 2, message: "must be bigger than 2"}
+  # monetize :price_cents, as: :price
   validates :price, numericality: { greater_than: 0, message: "must be a positive integer bigger than 0"}
 end
